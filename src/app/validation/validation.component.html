@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  /* Add some basic styling for better appearance */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <div>
+          <label for="date">Date:</label><br>
+          <mat-form-field appearance="fill">
+            <input matInput type="date" id="date" name="date">
+          </mat-form-field><br>
+        </div>
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Start Date:</mat-label>
+            <input matInput type="date" id="start_date" name="start_date">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>End Date:</mat-label>
+            <input matInput type="date" id="end_date" name="end_date">
+          </mat-form-field>
+        </div>
+        <div>
+          <label for="email">Email ID:</label><br>
+          <mat-form-field appearance="fill">
+            <input matInput type="email" id="email" name="email">
+          </mat-form-field><br>
+        </div>
+        <div>
+          <label for="password">Password:</label><br>
+          <mat-form-field appearance="fill">
+            <input matInput type="password" id="password" name="password">
+          </mat-form-field><br>
+        </div>
+        <div>
+          <label for="confirm_password">Confirm Password:</label><br>
+          <mat-form-field appearance="fill">
+            <input matInput type="password" id="confirm_password" name="confirm_password">
+          </mat-form-field><br>
+        </div>
+        <div>
+          <button mat-raised-button color="primary">Submit</button>
+        </div>
+      </form>
+      
+      
+
+</body>
+</html>
