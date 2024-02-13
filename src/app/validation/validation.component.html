@@ -12,7 +12,7 @@
             <div>
                 <label for="date">Date:</label><br>
             </div>
-            <div style="display: flex; align-items: center;">
+            <div style="display: flex;">
                 <mat-form-field appearance="fill">
                     <mat-label>Start Date</mat-label>
                     <input matInput [matDatepicker]="startDatePicker" id="start_date" name="start_date" formControlName="start_date">
@@ -31,7 +31,7 @@
                     </mat-form-field>
                 </div>
             </div>
-            <div style="margin-top: 10px;">
+            <div>
                 <mat-form-field appearance="fill">
                     <mat-label>Email ID</mat-label>
                     <input matInput type="email" id="email" name="email" formControlName="email">
@@ -55,8 +55,8 @@
                     <mat-error *ngIf="form.errors?.['passwordMismatch'] && form.get('confirm_password')?.touched">Passwords do not match.</mat-error>
                 </mat-form-field>
             </div>
-            <div style="margin-top: 40px;">
-                <button mat-raised-button color="accent" type="submit" style="background-color: green; color: white; font-size: 20px;">Submit</button>
+            <div>
+                <button mat-raised-button color="accent" type="submit">Submit</button>
             </div>                     
             <div *ngIf="registrationSuccess">
                 <p style="color: green; text-align: center;">Registration form filled successfully!</p>
