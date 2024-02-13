@@ -49,14 +49,4 @@ export class ValidationComponent {
       this.form.markAllAsTouched();
     }
   }
-
-  markFormGroupTouched(formGroup: FormGroup) {
-    Object.values(formGroup.controls).forEach(control => {
-      if (control instanceof FormControl) {
-        control.markAsTouched({ onlySelf: true });
-      } else if (control instanceof FormGroup) {
-        this.markFormGroupTouched(control);
-      }
-    });
-  }
 }
